@@ -8,5 +8,8 @@ Question | Solution
 [Socks Merchant](https://www.hackerrank.com/challenges/sock-merchant/problem) | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/SocksMerchant.java)
 [sherlock-and-the-beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem)  | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/sherlock-and-the-beast.java)
 [sherlock-and-array](https://www.hackerrank.com/challenges/sherlock-and-array/problem)  |   [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-Array.java)
+[sherlock-and-squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem) | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-squares.java)
 ------------ | -------------
+
+
 
