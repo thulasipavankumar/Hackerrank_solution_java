@@ -9,6 +9,7 @@ Question | Solution
 [sherlock-and-the-beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem)  | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/sherlock-and-the-beast.java)
 [sherlock-and-array](https://www.hackerrank.com/challenges/sherlock-and-array/problem)  |   [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-Array.java)
 [sherlock-and-squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem) | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-squares.java)
+[Bon Appetit](https://www.hackerrank.com/challenges/bon-appetit/problem)|[solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/BonApp%C3%A9tit.java)
 ------------ | -------------
 
 
