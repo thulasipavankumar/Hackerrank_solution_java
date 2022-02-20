@@ -47,7 +47,8 @@ public class AngryProfessor {
                 a[i] = aItem;
             }
 
-            String result = angryProfessor(k, a);
+            String result = null;
+            		//angryProfessor(k, a);
 
             bufferedWriter.write(result);
             bufferedWriter.newLine();

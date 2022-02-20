@@ -1,4 +1,4 @@
-package src.test.java.com.practice;
+package test.java.com.practice;
 
 
 import org.junit.After;
@@ -26,10 +26,22 @@ public class AngryProfessor_Test {
     }
     @Test
     public void test_for_positive_test_cases() {
-    	int[] arr = {4,3};
-    	Assert.assertTrue(AngryProfessor.angryProfessor(3,Arrays.asList(arr)).equals("YES"));
+    	List<Integer> list =  new ArrayList<Integer>();
+    	list.add(4);
+    	list.add(3);
+    	Assert.assertTrue(AngryProfessor.angryProfessor(3,list).equals("YES"));
+    	list =  new ArrayList<Integer>();
+    	list.add(0);list.add(-1);list.add(2);list.add(1);
     	int[] fail_arr= {0 ,-1, 2, 1};
-    	Assert.assertTrue(AngryProfessor.angryProfessor(2,Arrays.asList(fail_arr)).equals("NO"));
+    	Assert.assertTrue(AngryProfessor.angryProfessor(2,list).equals("NO"));
+    	
+    }
+    @Test
+    public void test_for_failed_scenario() {
+    	List<Integer> list =  new ArrayList<Integer>();
+    	list.add(0);list.add(-1);list.add(2);list.add(1);
+    	int[] fail_arr= {0 ,-1, 2, 1};
+    	Assert.assertTrue(AngryProfessor.angryProfessor(2,list).equals("NO"));
     	
     }
     @After
