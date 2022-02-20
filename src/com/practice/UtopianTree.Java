@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class UtopianTree {
 
     // Complete the utopianTree function below.
     static int utopianTree(int n) {
