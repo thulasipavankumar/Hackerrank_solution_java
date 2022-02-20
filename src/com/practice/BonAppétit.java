@@ -1,3 +1,4 @@
+package com.practice;
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -10,7 +11,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class Solution {
+public class BonAppétit {
 
     // Complete the bonAppetit function below.
     static void bonAppetit(List<Integer> bill, int k, int b) {

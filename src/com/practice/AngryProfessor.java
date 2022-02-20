@@ -1,3 +1,4 @@
+package com.practice;
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -6,7 +7,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class AngryProfessor {
 
     // Complete the angryProfessor function below.
     static String angryProfessor(int k, int[] a) {
