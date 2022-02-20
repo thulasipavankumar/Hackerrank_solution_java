@@ -10,12 +10,12 @@ import java.util.regex.*;
 public class AngryProfessor {
 
     // Complete the angryProfessor function below.
-    static String angryProfessor(int k, int[] a) {
+    public static String angryProfessor(int k, List<Integer> a) {
 
         int intimeStudents = 0;
 
-        for(int i=0;i<a.length;i++){
-            if(a[i]<=0){
+        for(int i=0;i<a.size();i++){
+            if(a.get(i)<=0){
                 intimeStudents++;
             }
         }
