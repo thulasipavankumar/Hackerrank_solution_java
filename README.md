@@ -10,7 +10,7 @@ Question | Solution
 [sherlock-and-array](https://www.hackerrank.com/challenges/sherlock-and-array/problem)  |   [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-Array.java)
 [sherlock-and-squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem) | [solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock-and-squares.java)
 [Bon Appetit](https://www.hackerrank.com/challenges/bon-appetit/problem)|[solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/BonApp%C3%A9tit.java)
-[Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem) **Medium**|[solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock_anagrams.java.java)
+[Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem) **Medium**|[solution](https://github.com/thulasipavankumar/Hackerrank_solution_java/blob/master/Sherlock_anagrams.java)
 ------------ | -------------
 
 
