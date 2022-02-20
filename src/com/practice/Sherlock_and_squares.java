@@ -1,5 +1,8 @@
-public class sherlock-and-squares {
-     static int squares(int a, int b) {
+package com.practice;
+
+public class Sherlock_and_squares {
+
+	static int squares(int a, int b) {
         double a1= Math.sqrt(a),
         b1=Math.sqrt(b);
         System.out.println(a1+" "+b1);

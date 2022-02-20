@@ -1,4 +1,8 @@
-public class Solution{
+package com.practice;
+
+import java.util.Arrays;
+
+public class sherlock_and_the_beast{
 static void caluclate(int length) {
          StringBuilder out = new StringBuilder();
          int arr[] = getAIntArray(length);
@@ -47,6 +51,12 @@ static void caluclate(int length) {
             
             
     }
+
+private static int[] getAIntArray(int length) {
+	// TODO Auto-generated method stub
+	return new int[length];
+}
+
 public static void main(String args[]){
 
 }

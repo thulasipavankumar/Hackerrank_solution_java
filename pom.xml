@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>practice</groupId>
+	<artifactId>practice</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		
+	</properties>
+	<build>
+		<!-- -->
+		 <sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<!-- <artifactId>maven-compiler-plugin</artifactId> -->
+				<!-- <artifactId>maven-jar-plugin</artifactId> -->
+				
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<!-- <version>3.7</version> -->
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					 <compilerArgs>
+        	<arg>-XDignore.symbol.file</arg>
+	    </compilerArgs>
+					<archive>
+						<!-- <manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>com.tcpplugin.TCPPlugin</mainClass>
+						</manifest> -->
+					</archive>
+					 <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+                
+				</configuration>
+				<executions>
+                <execution>
+                    <id>make-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+				<!-- <archive> <manifest> <addClasspath>true</addClasspath> <mainClass>com.tcpplugin.TCPPlugin</mainClass> 
+					</manifest> </archive> <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
+					</descriptorRefs> -->
+				<!-- <executions> <execution> <phase>package</phase> <goals> <goal>single</goal> 
+					<properties> </properties> </goals> </execution> </executions> -->
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<dependencies>
+		<!-- <dependency> <groupId>org.json</groupId> <artifactId>json</artifactId> 
+			<version>20180813</version> <version>20201115</version> </dependency> -->
+		
+		 <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+      
+	</dependencies>
+</project>

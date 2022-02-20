@@ -1,4 +1,4 @@
-
+package com.practice;
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class FindDigits {
 
     // Complete the findDigits function below.
     static int findDigits(int n) {
