@@ -18,6 +18,7 @@ public class Count_Triplets {
 		List<Long> filtered = arr.stream()
 				.filter(num->(num==1||(num%r==0)))
 				.collect(Collectors.toList());
+		
 		if(filtered.size()<3){
 			return 0;
 		}
@@ -25,23 +26,44 @@ public class Count_Triplets {
 			
 			Long src = filtered.get(i);
 			long expected = src*r;
-//			List<Long> progression_with_src = filtered.stream()
-//					.filter(val->(val>=(expected)))
-//					.collect(Collectors.toList());
-			List<Long> progression_with_src = arr;
-			int index=i+1;
+			List<Long> progression_with_src = filtered.stream()
+					.filter(val->(val%expected)==0)
+					.collect(Collectors.toList());
+		//	List<Long> progression_with_src = filtered;
+		//	int index=i+1;
+			
+			
+			int index=0;
 			int to_start = -1;
+			
 			do{
+				if(index>=filtered.size()-1) {
+					to_start = -1;
+				}
+				else
 				 to_start = findElement(progression_with_src,expected,index);
+				
 				if(to_start!=-1) {
-					//System.out.print(src+"-"+progression_with_src.get(to_start)+"-");
+					//System.out.print(i+"="+src+"-"+to_start+"="+progression_with_src.get(to_start)+"-");
 					//Optional<Long> third_expected = filtered.stream().filter(val->(val==(expected*r))).findFirst();
 					//if(third_expected.isPresent()) {
 						count = third_loop(progression_with_src,expected*r,to_start+1,count);
+						index=to_start+1;
 					//}
+				
+					/*
+					{
+					long thrid_value = expected*r;
+					long temp  = progression_with_src.stream()
+							.filter(val->val==thrid_value)
+							.count();
+					count+=temp;
 					index++;
+					}
+					*/
 					//System.out.println();
 				}
+
 				
 				
 		}while(to_start!=-1);
@@ -57,7 +79,7 @@ public class Count_Triplets {
 	}
 	
 	private static int findElement(List<Long> list,long expected,int fromIndex) {
-		if(fromIndex>=list.size())
+		if(fromIndex>=list.size()||fromIndex<0)
 			return -1;
 		for(int i=fromIndex;i<list.size();i++) {
 			if((list.get(i)).equals(expected))
@@ -71,7 +93,7 @@ public class Count_Triplets {
 		if(found!=-1&&found<progression_with_src.size()) {
 
 			while((found<=progression_with_src.size())&&(found =findElement(progression_with_src,expected,found))!=-1) {
-				//System.out.print(progression_with_src.get(found)+"-");
+				//System.out.print(found+"="+progression_with_src.get(found)+"-");
 				count++;
 				found++;
 			}
@@ -92,32 +114,6 @@ public class Count_Triplets {
     		return 0;
     	}
     	for(int i=0;i<filtered.size()-2;i++) {
-    		
-    		Long src = filtered.get(i);
-    		List<Long> progression_with_src = filtered.stream()
-    				.filter(val->(val>=(src*r)))
-    				.collect(Collectors.toList());
-    		for(int j=0;j<progression_with_src.size();j++) {
-    		List<Long> filtered1 = returnListFromIndex(progression_with_src,j).stream()
-    				.filter(val->(val>=(src*r)))
-    				.collect(Collectors.toList());
-    		if(filtered1.size()<2) {
-    			break;
-    		}
-    		 filtered1.stream().forEach(val->System.out.print(val+" "));
-    		 System.out.println();
-    		 System.out.print(src+"-");
-    		int index=  recursiveFind(filtered1,r,src,0,j,false);
-    		if(index>0) {
-    			
-    			
-    			System.out.println(index+" => found");
-    			//j=index;
-    			count++;
-    		}
-    		//filtered1.stream().forEach(System.out::print);
-    		System.out.println();
-    	}
     	}
     	return count;
     }
@@ -198,6 +194,6 @@ public class Count_Triplets {
     	List<Long> three = new ArrayList<Long>();
     	three.add((long)1);three.add((long) 3);three.add((long) 9);three.add((long) 9);three.add((long)27);three.add((long)81);
 
-    	System.out.println(countTriplets(two,2));
+    	System.out.println(countTriplets(five,5));
     }
 }
