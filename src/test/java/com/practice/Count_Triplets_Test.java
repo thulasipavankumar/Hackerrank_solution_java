@@ -33,6 +33,12 @@ public class Count_Triplets_Test {
     	List<Long> three = new ArrayList<Long>();
     	three.add((long)1);three.add((long) 3);three.add((long) 9);three.add((long) 9);three.add((long)27);three.add((long)81);
     	Assert.assertEquals(6,Count_Triplets.countTriplets(three,3));
+    	
+    	
+    	
+    	List<Long> misc = new ArrayList<Long>();
+    	misc.add((long)1);misc.add((long) 3);misc.add((long) 1);misc.add((long) 3);misc.add((long) 9);
+    	Assert.assertEquals(3,Count_Triplets.countTriplets(misc,3));
     }
     @Test
     public void test_for_negative_test_cases() {
