@@ -313,25 +313,7 @@ public static int recursiveFind(List<Long> list,long r,long num,int count,int in
 
 
 private static long count_new_mothod(List<Long> arr, long r) {
-	Map<Long, Long> potential = new HashMap<>();
-    Map<Long, Long> counter = new HashMap<>();
-    long count = 0;
-    for (int i = 0; i < arr.size(); i++) {
-        long a = arr.get(i);
-        long key = a / r;
-        
-        if (counter.containsKey(key) && a % r == 0) {
-            count += counter.get(key);
-        }
-        
-        if (potential.containsKey(key) && a % r == 0) {
-            long c = potential.get(key);
-            counter.put(a, counter.getOrDefault(a, 0L) + c);
-        }
-        
-        potential.put(a, potential.getOrDefault(a, 0L) + 1); // Every number can be the start of a triplet.
-    }
-    return count;
+	return 0;
 }
  
 }
